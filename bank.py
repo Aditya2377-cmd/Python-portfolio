@@ -1,5 +1,5 @@
 user1=input("What are you going to say to me- ").lower().split()
-
+from keyword import startswith
 if user1.startswith("hello"):
     print("$0")
 elif user1.startswith("h"):
