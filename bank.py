@@ -1,4 +1,4 @@
-user1=input("What are you going to say to me- ").split().lower()
+user1=input("What are you going to say to me- ").lower().split()
 
 if user1.startwith("hello"):
     print("$0")
