@@ -1,4 +1,4 @@
-user1=input("What is the answer to the Great Question of Life, the Universe and Everything- ").strip()
+user1=input("What is the answer to the Great Question of Life, the Universe and Everything- ").strip().lower()
 
 
 if user1=="42" or user1=="forty two" or user1=="forty-two":
