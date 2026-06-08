@@ -1,12 +1,15 @@
-user1=input("File name- ").strip().lower()
-extension=input("Enter the extension-").strip().lower()
-if extension==".jpg" or extension==".jpeg" or extension==".png":
+def main():
+    extension=input("file name-").strip().lower()
+if extension.endswith(".jpg") or extension==(".jpeg") or extension==(".png"):
     print("image/jpeg")
-elif extension==".gif":
+elif extension.endswith(".gif"):
     print("image/gif")
-elif extension==".pdf":
-    print("image/pdf")
-elif extension==".txt":
-    print("image/txt")
+elif extension.endswith(".pdf"):
+    print("application/pdf")
+elif extension.endswith(".txt"):
+    print("text/text")
+elif extension.endswith(".zip"):
+    print("application/zip")
 else:
-    print("image/zip")
+    print("application/octet-stream")
+main()
