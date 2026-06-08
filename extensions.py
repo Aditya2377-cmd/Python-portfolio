@@ -1,6 +1,5 @@
-def main():
-    extension=input("file name-").strip().lower()
-if extension.endswith(".jpg") or extension==(".jpeg") or extension==(".png"):
+extension=input("file name-").strip().lower()
+if extension.endswith(".jpg") or extension.endswith(".jpeg") or extension.endswith(".png"):
     print("image/jpeg")
 elif extension.endswith(".gif"):
     print("image/gif")
@@ -12,4 +11,4 @@ elif extension.endswith(".zip"):
     print("application/zip")
 else:
     print("application/octet-stream")
-main()
+
