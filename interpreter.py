@@ -1,13 +1,14 @@
-expression = input("Expression: ")
-x_str, y, z_str = expression.split(" ")
-x = int(x_str)
-z = int(z_str)
-if y == ("+"):
-    result = x + z
-elif y == ("-"):
-    result = x - z
-elif y == ("*"):
-    result = x * z
-elif y == ("/"):
-    result = x / z
+# Get and split the input into three parts
+x, y, z = input("Expression: ").split()
+
+# Check the operator and print the result formatted to 1 decimal place
+if y == "+":
+    print(f"{float(x) + float(z):.1f}")
+elif y == "-":
+    print(f"{float(x) - float(z):.1f}")
+elif y == "*":
+    print(f"{float(x) * float(z):.1f}")
+elif y == "/":
+    print(f"{float(x) / float(z):.1f}")
+
 
