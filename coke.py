@@ -8,4 +8,4 @@ while amount_due > 0:
         amount_due -= coin
 
 amount_owed= amount_due*-1
-print(f"Change owed : {amount_owed}")
+print(f"Change owed: {amount_owed}")
