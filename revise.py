@@ -8,11 +8,11 @@ for _ in range(4):
     print("Bhallaldeva")
 Characters=["Bhallaladeva", "Bahubali", "Sivagami Devi", "Devasena", "Kattapa"]
 print(len(Characters))
-print(Characters[0 , 2 , 5])
+print(Characters[0])
 Sides={
     "Bhallaladeva":"Villain",
     "Bahubali":"Hero",
     "Bridhadeva":"Legend",
 }
-print(sides["Legend"])
+print(Sides["Bahubali"])
 
