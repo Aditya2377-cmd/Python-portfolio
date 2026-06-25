@@ -6,8 +6,6 @@ while amount_due > 0:
     coin = int(input("Insert Coin: "))
     if coin in accepted_coins:
         amount_due -= coin
-    else:
-        continue
 
 amount_owed= amount_due*-1
 print(f"amount_owed : {amount_owed}")
