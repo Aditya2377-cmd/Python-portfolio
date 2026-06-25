@@ -9,4 +9,5 @@ while amount_due > 0:
     else:
         continue
 
-
+if amount_due<0:
+    print(f"amount_owed :abs{amount_due})
