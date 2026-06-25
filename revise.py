@@ -8,6 +8,6 @@ for _ in range(4):
     print("Bhallaldeva")
 Characters=["Bhallaladeva", "Bahubali", "Sivagami Devi", "Devasena", "Kattapa"]
 print(len(characters))
-
+print(Characters[0,2,5])
 
 
