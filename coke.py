@@ -7,5 +7,5 @@ while amount_due > 0:
     if coin in accepted_coins:
         amount_due -= coin
 
-amount_owed= amount_due*-1
+Change owed= amount_due*-1
 print(f"amount_owed : {amount_owed}")
