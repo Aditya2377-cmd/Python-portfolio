@@ -7,10 +7,10 @@ for _ in [1,2,3,4,5]:
 for _ in range(4):
     print("Bhallaldeva")
 Characters=["Bhallaladeva", "Bahubali", "Sivagami Devi", "Devasena", "Kattapa"]
-print(len(characters))
-print(Characters[0,2,5])
+print(len(Characters))
+print(Characters[0 , 2 , 5])
 Sides={
-    "Bhallaladeva":"Villain',
+    "Bhallaladeva":"Villain",
     "Bahubali":"Hero",
     "Bridhadeva":"Legend",
 }
