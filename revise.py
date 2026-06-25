@@ -15,4 +15,10 @@ Sides={
     "Bridhadeva":"Legend",
 }
 print(Sides["Bahubali"])
-
+while True:
+    n=int(input("What is value of N- "))
+    if n > 0:
+        print("Success")
+        break
+    else:
+        print("try again")
