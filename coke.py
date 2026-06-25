@@ -9,7 +9,4 @@ while amount_due > 0:
     else:
         continue
 
-# 4. Calculate change owed once the loop ends
-# If amount_due is negative (e.g., -5), the absolute value turns it into positive change (5)
-change_owed = abs(amount_due)
-print(f"Change Owed: {change_owed}")
+
