@@ -1,9 +1,9 @@
 user=input("Input: ")
 twitter=["a" , "e" , "i", "o", "u","A" ,"E", "I", "O", "U"]
 short=""
-for letter in user:
-    if letter not in twitter:
-        short += letter
+for _ in user:
+    if _ not in twitter:
+        short += _
 
 
 print(f"Output: {short}")
