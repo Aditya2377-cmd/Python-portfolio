@@ -6,4 +6,7 @@ for letter in user:
         short += letter
 
 
+print(f"Output: {short}")
+
+
 
