@@ -13,6 +13,7 @@ def is_valid(s):
         return False
     if not s.isalnum():
         return False
+
     for i in range(len(s)):
         if s[i].isdigit():
             if s[i] == '0':
