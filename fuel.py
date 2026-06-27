@@ -5,7 +5,6 @@ while True:
         x = int(x_str)
         y = int(y_str)
         if x > y:
-            continue
         percentage = round((x / y) * 100)
         break
 
