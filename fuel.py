@@ -11,10 +11,10 @@ while True:
 
     except (ValueError, ZeroDivisionError):
         pass
-if percentage <= 1:
+if 0<percentage <= 1:
     print("E")
 elif percentage >= 99:
     print("F")
 else:
     print(f"{percentage}%")
-    
+
