@@ -4,7 +4,7 @@ while True:
         x_str, y_str = fuel.split("/")
         x = int(x_str)
         y = int(y_str)
-        if x > y:
+        if x > y and x/y<0:
             continue
         percentage = round((x / y) * 100)
         break
