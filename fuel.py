@@ -11,7 +11,7 @@ while True:
 
     except (ValueError, ZeroDivisionError):
         pass
-if 0<percentage <= 1:
+if percentage <= 1:
     print("E")
 elif percentage >= 99:
     print("F")
