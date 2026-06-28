@@ -14,7 +14,7 @@
                 month_name, day, year = user_input.split(" ")
                 day = day.replace(",", "")
                 if month_name in months:
-                    month = months[month_name]
+                    month = int(months[month_name])
                 else:
                     continue
 
