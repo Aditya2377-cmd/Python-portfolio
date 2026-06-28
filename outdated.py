@@ -25,6 +25,7 @@
             if int(month) > 12 or int(day) > 31:
                 continue
             print(f"{int(year)}-{int(month):02}-{int(day):02}")
+
             break
 
         except ValueError:
