@@ -1,12 +1,12 @@
  months = {
         "January": 1, "February": 2, "March": 3, "April": 4,
         "May": 5, "June": 6, "July": 7, "August": 8,
-        "September": 9, "October": 10, "November": 11, "December": 12
+            "September": 9, "October": 10, "November": 11, "December": 12
     }
     while True:
         try:
             user_input = input("Date: ").strip()
-            month, day, year= 0, 0, 0
+            month, day, year = 0, 0, 0
             if "/" in user_input:
                 month, day, year = user_input.split("/")
                 if month.isalpha():
@@ -29,4 +29,4 @@
 
         except ValueError:
             continue
-        
+
