@@ -6,6 +6,7 @@
     while True:
         try:
             user_input = input("Date: ").strip()
+            month, day, year= 0, 0, 0
             if "/" in user_input:
                 month, day, year = user_input.split("/")
                 if month.isalpha():
