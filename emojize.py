@@ -1,4 +1,12 @@
 import emoji
 
-Value1=input("input: ")
+while True:
+    Value1=input("input: ").strip()
+    Value2=""
+    try:
+        if 
+
+
+
+if Value1
 
