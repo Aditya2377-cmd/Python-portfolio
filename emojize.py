@@ -4,7 +4,7 @@ while True:
     Value1=input("input: ").strip()
     Value2=""
     try:
-        if 
+        if in Value2 y="
 
 
 
