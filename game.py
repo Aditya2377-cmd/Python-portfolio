@@ -18,8 +18,10 @@ while True:
             continue
         elif guess < target:
             print("Too small!")
+            continue
         elif guess > target:
             print("Too large!")
+            continue
         else:
             print("Just right!")
 
