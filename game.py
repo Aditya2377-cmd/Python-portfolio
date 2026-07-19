@@ -20,7 +20,7 @@ while True:
             print("Too small!")
         elif guess > target:
             print("Too big!")
-        else guess == target:
+        else: guess == target
             print("Just right!")
 
         break
