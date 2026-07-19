@@ -9,7 +9,7 @@ while True:
     except ValueError:
         pass
 
-    target= random.randint(1,level)
+target= random.randint(1,level)
 
 while True:
     try:
