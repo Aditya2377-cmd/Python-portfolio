@@ -19,8 +19,8 @@ while True:
         elif guess < target:
             print("Too small!")
         elif guess > target:
-            print("Too big!")
-        else: guess == target
+            print("Too large!")
+        else:
             print("Just right!")
 
         break
