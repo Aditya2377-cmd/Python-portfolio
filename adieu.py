@@ -3,14 +3,17 @@ p=inflect.engine()
 users = []
 while True:
     try:
-        user=input("Enter the names: ")
-
+        user=input("Name: ")
+        users.append(user)
 
     except EOFError:
 
-        break
-    users.append(user)
-    output=p.join(users)
-    print(f"Adieu, Adieu to {output}" )
+     output=p.join(users)
+     print()
+     print(f"Adieu, adieu, to {output}" )
+
+
+     break
+
 
 
