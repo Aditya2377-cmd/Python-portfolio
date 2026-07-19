@@ -10,4 +10,10 @@ while True:
         pass
 
     target= random.randint(1,level)
-    
+
+while True:
+    try:
+        guess=int(input("Guess: "))
+        if guess <=0:
+            continue
+        elif guess < target
