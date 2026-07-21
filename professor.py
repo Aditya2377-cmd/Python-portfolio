@@ -13,7 +13,7 @@ def get_level():
         try:
             iret = int(input("Level: "))
             if iret in [1, 2, 3]:
-                return iret
+            return iret
         except ValueError:
             pass
 
