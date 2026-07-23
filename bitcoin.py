@@ -13,7 +13,9 @@ except ValueError:
 try:
     response = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apikey=Yourapikey")
     data = response.json()
-    price = float(data["bpi"]["USD"]["rate_float"]
+    price = float(data["data"]["priceUsd"])
+    total = bitcoins * price
+    print(f"{total:,.4f}")
 except requests.RequestException:
     sys.exit("Failed to fetch price")
 
