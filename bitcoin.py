@@ -2,7 +2,7 @@ import requests
 import json
 
 
-response = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey=YourApiKey")
+response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 
 data = response.json()
-print(data["api"]["USD"]["rate"])
+print(data["bpi"]["USD"]["rate_float"])
