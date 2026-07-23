@@ -11,9 +11,9 @@ except ValueError:
 
 
 try:
-    response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+    response = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apikey=Yourapikey")
     data = response.json()
-    price = data["bpi"]["USD"]["rate_float"]
+    price = float(data["bpi"]["USD"]["rate_float"]
 except requests.RequestException:
     sys.exit("Failed to fetch price")
 
