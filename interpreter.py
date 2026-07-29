@@ -8,7 +8,6 @@ for op in ["+", "-", "*", "/"]:
 
 x, y, z = expr.split()
 
-# Check the operator and print the result formatted to 1 decimal place
 if y == "+":
     print(f"{float(x) + float(z):.1f}")
 elif y == "-":
