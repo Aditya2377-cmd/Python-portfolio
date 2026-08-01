@@ -1,6 +1,12 @@
 from tabulate import tabulate
 import csv
 import sys
+if len(sys.argv)>2:
+    sys.exit("Too many command- line arguments")
+elif len(sys.argv)<2:
+    sys.exit("Too less command-line arguments")
+elif not sys.argv[1].endswith(".csv") or sys.argv[1].startswith("#"):
+    sys.exit("Not a csv file")
 
 new=[]
 try:
