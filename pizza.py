@@ -1,4 +1,4 @@
-import tabulate
+from tabulate import tabulate
 import csv
 import sys
 
@@ -7,7 +7,10 @@ try:
     with open(sys.argv[1]) as csvfile:
         spamreader = csv.reader(csvfile)
         for row in spamreader:
-        table.append(row)
-        print(tabulate(table,headers="firstrows",tablefmt="grid"))
+            table.append(row)
+
 except FileNotFoundError:
-    pass
+    sys.exit("File not found")
+
+print(tabulate(table,headers="firstrows",tablefmt="grid"))
+
