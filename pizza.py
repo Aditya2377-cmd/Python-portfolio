@@ -11,4 +11,5 @@ try:
 
 except FileNotFoundError:
     sys.exit("File does not exist")
+print(new(tabulate,headers="FirstRow",tablefmt="grid"))
 
