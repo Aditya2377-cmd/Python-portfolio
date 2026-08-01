@@ -5,4 +5,4 @@ import sys
 new=[]
 try:
     with open(sys.argv[1]) as jack:
-        
+        oggy=csv.reader()
