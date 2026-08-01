@@ -17,5 +17,5 @@ try:
 
 except FileNotFoundError:
     sys.exit("File does not exist")
-print(new(tabulate,headers="FirstRow",tablefmt="grid"))
+print(tabulate(new,headers="FirstRow",tablefmt="grid"))
 
