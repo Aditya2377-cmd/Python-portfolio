@@ -23,4 +23,4 @@ else:
 figlet.setFont(font=chosen_font)
 
 user_text = input("Input: ")
-print(figlet.renderText(user_text))
+print(figlet.renderText(user_text)) 
