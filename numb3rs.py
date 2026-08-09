@@ -8,8 +8,9 @@ def validate(ip):
     for part in one:
         if not part.isdigit():
             return False
-    if  not ( 0 <= int(part) <= 255):
-        return False
+        if  not ( 0 <= int(part) <= 255):
+            return False
+        return True
 
 
 if __name__ == "__main__":
