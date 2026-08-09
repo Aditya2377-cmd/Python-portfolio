@@ -1,18 +1,16 @@
+import re
 import sys
-from validator_collection import validators, errors
 
 
 def main():
-    print(validate(input("What's your email address? ")))
+    print(count(input("Text: ")))
 
 
-def validate(s):
-    try:
-        # Validates email address syntax
-        email_address = validators.email(s)
-        return "Valid"
-    except (errors.EmptyValueError, errors.InvalidEmailError):
-        return "Invalid"
+def count(s):
+    # \b captures word boundaries so "yummy" or "album" are ignored
+    # re.IGNORECASE makes it match "um", "Um", "UM", etc.
+    matches = re.findall(r"\bum\b", s, re.IGNORECASE)
+    return len(matches)
 
 
 if __name__ == "__main__":
