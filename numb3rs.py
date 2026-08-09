@@ -4,8 +4,14 @@ def main():
 def validate(ip):
     while True:
         try:
-            one,two,three,four = ip.split(".")
-            if one > 0 and one <= 255 and not one.isalpha:
+            one, two, three, four = ip.split(".")
+            if one <255:
+                print("True")
+            elif one <0:
+                print("False")
+            elif one.isalpha():
+                print("False")
+            elif one == 255:
                 print("True")
             else:
                 print("False")
