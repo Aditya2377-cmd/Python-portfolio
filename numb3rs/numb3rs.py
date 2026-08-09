@@ -2,15 +2,18 @@ def main():
     print(validate(input("IPv4 Address: " )))
 
 def validate(ip):
-    one = ip.split(".")
-    if len(ip) != 4:
+    parts = ip.split(".")
+    if len(parts) != 4:
         return False
-    for part in one:
+    for part in parts:
         if not part.isdigit():
+            return False
+        if len(part) > 1 and part.startswith("0"):
             return False
         if  not ( 0 <= int(part) <= 255):
             return False
-        return True
+
+    return True
 
 
 if __name__ == "__main__":
