@@ -15,5 +15,6 @@ def test_invalid_emails():
     assert validate("malan@") == "Invalid"
 
 
+
 def test_empty_input():
     assert validate("") == "Invalid"
