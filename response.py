@@ -8,7 +8,6 @@ def main():
 
 def validate(s):
     try:
-        # Validates email address syntax
         email_address = validators.email(s)
         return "Valid"
     except (errors.EmptyValueError, errors.InvalidEmailError):

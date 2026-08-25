@@ -4,8 +4,8 @@ from seasons import get_minutes, convert_to_words
 
 
 def test_get_minutes():
-    assert get_minutes("2020-01-01", date(2021, 01, 01)) == 525600
-    assert get_minutes("2020-01-01", date(2022, 01, 01)) == 1051200
+    assert get_minutes("2020-01-01", date(2021, 01, 01)) == 525600)
+    assert get_minutes("2020-01-01", date(2022, 01, 01)) == 1051200)
 
 
 def test_invalid_date():
@@ -14,4 +14,4 @@ def test_invalid_date():
 
 
 def test_convert_to_words():
-    assert convert_to_words(525600) == "Five hundred twenty-five thousand, six hundred"
+    assert convert_to_words(525600) == ("Five hundred twenty-five thousand, six hundred")

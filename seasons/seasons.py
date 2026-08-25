@@ -21,8 +21,9 @@ def get_minutes(dob_str, today_date):
     return total_minutes
 
 
-def convert_to_words(minutes):
-    words = p.number_to_words(minutes, and_word="")
+def convert_to_words(time):
+    words = p.number_to_words(time)
+    words = words.replace(" and " , " ")
     return words.capitalize()
 
 
