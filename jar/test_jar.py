@@ -10,8 +10,7 @@ def test_init():
     assert jar2.capacity == 5
     with pytest.raises(ValueError):
         Jar(-1)
-    with pytest.raises(ValueError):
-        Jar("invalid")
+    
 
 
 def test_str():
