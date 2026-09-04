@@ -13,7 +13,7 @@ def main():
     except ValueError:
         sys.exit("Invalid date")
 
-
+3
 def get_minutes(dob_str, today_date):
     dob = date.fromisoformat(dob_str)
     difference = today_date - dob
