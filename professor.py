@@ -6,7 +6,7 @@ def main():
     operation = get_op()
 
     for i in range(10):
-        score = generate_integer(user1, score, operation)
+        score = generate_integer(operation, user1, score)
 
     print(f"Score: {score}")
 
@@ -29,7 +29,11 @@ def get_level():
         except ValueError:
             pass
 
-def generate_integer(level, score, operation):
+def generate_integer(operation, level, score):
+    if operation ==
+
+
+
     if level == 1:
         start, end = 0, 9
     elif level == 2:
