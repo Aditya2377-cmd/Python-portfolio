@@ -14,8 +14,10 @@ def get_op():
     while True:
         try:
             innet = input("Enter the operation you want to test with : ")
-            if innet in 
-
+            if innet in ops:
+                return innet
+            print(f"You have chosen : {ops[innet]}")
+    
 
 def get_level():
     while True:
