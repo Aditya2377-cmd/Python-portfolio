@@ -29,7 +29,7 @@ def get_level():
         except ValueError:
             pass
 
-def generate_integer(level, score):
+def generate_integer(level, score, innet):
     if level == 1:
         start, end = 0, 9
     elif level == 2:
