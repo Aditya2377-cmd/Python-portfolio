@@ -42,20 +42,28 @@ def generate_integer( level, operation, score):
         start, end = 10000, 99999
 
     if operation == "S":
-             inet1 = random.randint(start, end)
-             inet2 = random.randint(start, end)
-             correct = inet - inet2
+        inet1 = random.randint(start, end)
+        inet2 = random.randint(start, end)
+        correct = inet1 - inet2
     elif operation == "A":
         inet1 = random.randint(start, end)
         inet2 = random.randint(start, end)
         correct = inet1 + inet2
-    
+    elif operation == "M":
+        inet1 = random.randint(start, end)
+        inet2 = random.randint(start, end)
+        correct = inet1 * inet2
+    else :
+        inet1 = random.randint(start, end)
+        inet2 = random.randint(start, end)
+        correct = inet1 / inet2
+
 
     tries = 0
 
     while True:
         try:
-            final = int(input(f"{inet1} + {inet2} = "))
+            final = int(input(f"{inet1}  {inet2} = "))
             if final != correct:
                 print("EEE")
                 tries += 1
