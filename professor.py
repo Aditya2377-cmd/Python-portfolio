@@ -13,7 +13,7 @@ def main():
 def get_op():
     while True:
         try:
-            innet = input("Enter the operation you want to test with : ")
+            innet = input("operation : ")
             if innet in ops:
                 return innet
             print(f"You have chosen : {ops[innet]}")
@@ -29,7 +29,7 @@ def get_level():
         except ValueError:
             pass
 
-def generate_integer(level, score, innet):
+def generate_integer(level, score, operation):
     if level == 1:
         start, end = 0, 9
     elif level == 2:
