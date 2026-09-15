@@ -2,7 +2,7 @@ import random
 def main():
     user1 = get_level()
     score = 0
-    ops = { "Addition" , "Subtraction" , "Multiplication", "Division"}
+    ops = { "A" : "Addition" , "S" : "Subtraction" , "M" : "Multiplication", "D" : "Division"}
     operation = get_op()
 
     for i in range(10):
@@ -13,7 +13,8 @@ def main():
 def get_op():
     while True:
         try:
-            innet = input
+            innet = input("Enter the operation you want to test with : ")
+            if innet in 
 
 
 def get_level():
