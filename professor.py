@@ -63,7 +63,7 @@ def generate_integer( level, operation, score):
 
     while True:
         try:
-            final = int(input(f"{inet1}  {inet2} = "))
+            final = int(input(f"{inet1} - {inet2} = "))
             if final != correct:
                 print("EEE")
                 tries += 1
@@ -83,6 +83,29 @@ def generate_integer( level, operation, score):
                 print(f"{inet1} + {inet2} = {correct}")
                 return score
             continue
+    while True:
+         try:
+            final = int(input(f"{inet1} - {inet2} = "))
+            if final != correct:
+                print("EEE")
+                tries += 1
+                if tries == 3:
+                    print(f"{inet1} + {inet2} = {correct}")
+                        return score
+                    continue
+                else:
+                    if tries == 0:
+                        score += 1
+                    return score
+
+            except ValueError:
+                print("EEE")
+                tries += 1
+                if tries == 3:
+                    print(f"{inet1} + {inet2} = {correct}")
+                    return score
+                continue
+
 
 if __name__ == "__main__":
     main()
