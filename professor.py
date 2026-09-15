@@ -29,12 +29,8 @@ def get_level():
         except ValueError:
             pass
 
-def generate_integer(operation, level, score):
-    if operation ==
-
-
-
-    if level == 1:
+def generate_integer( level, operation, score):
+     if level == 1:
         start, end = 0, 9
     elif level == 2:
         start, end = 10, 99
@@ -45,11 +41,15 @@ def generate_integer(operation, level, score):
     else:
         start, end = 10000, 99999
 
-    if
-
-    inet1 = random.randint(start, end)
-    inet2 = random.randint(start, end)
-    correct = inet1 + inet2
+    if operation == "S":
+             inet1 = random.randint(start, end)
+             inet2 = random.randint(start, end)
+             correct = inet - inet2
+    elif operation == "A":
+        inet1 = random.randint(start, end)
+        inet2 = random.randint(start, end)
+        correct = inet1 + inet2
+    
 
     tries = 0
 
