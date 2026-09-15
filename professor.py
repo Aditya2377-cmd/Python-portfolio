@@ -6,7 +6,7 @@ def main():
     operation = get_op()
 
     for i in range(10):
-        score = generate_integer(user1, score)
+        score = generate_integer(user1, score, operation)
 
     print(f"Score: {score}")
 
@@ -17,6 +17,7 @@ def get_op():
             if innet in ops:
                 return innet
             print(f"You have chosen : {ops[innet]}")
+
 
 
 def get_level():
@@ -40,7 +41,7 @@ def generate_integer(level, score):
     else:
         start, end = 10000, 99999
 
-    if 
+    if
 
     inet1 = random.randint(start, end)
     inet2 = random.randint(start, end)
