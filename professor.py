@@ -3,14 +3,17 @@ def main():
     user1 = get_level()
     score = 0
     ops = { "Addition" , "Subtraction" , "Multiplication", "Division"}
-    operation = get_op(innet)
+    operation = get_op()
 
     for i in range(10):
         score = generate_integer(user1, score)
 
     print(f"Score: {score}")
 
-def get_op(innet):
+def get_op():
+    while True:
+        try:
+            innet = input
 
 
 def get_level():
